@@ -14,5 +14,7 @@ La fonction init(); reçoit trois arguments
       init(largeur de branche en pixel, angle de rotation initial en degré, longueur première branche en pixel);
       
 Pour rajouter une branche à l'arbe, il suffit de rajouter une fonction init(); dans la fonction racine();. Un seTimeout sur chaque fonction permet de différer les départs et ainsi donner une impression plus naturelle de la croissance des branches.
+
+Plus de détails sur https://www.artofnetwork.fr
  
      
