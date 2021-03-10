@@ -1,4 +1,6 @@
 
+// code créé par Alain Thomassigny - Février 2021 - www.artofnetwork.fr
+
 function init(lar, deg, lon) { 
 	//creation des eement canvas en fonctionde la demande
 	
@@ -191,12 +193,13 @@ function racine() {
 		}, 2000);
 	}
 }
-i=1;
+//initialisation
+i=1; // i par de 1 pour la fonction 1/ln qui risque de ne pas accpter 0
 
 	var canvas = document.createElement("canvas");
 	canvas.setAttribute("class","fractal1");
 	canvas.width=1000;
-    canvas.height=800;
+   	canvas.height=800;
 	document.body.appendChild(canvas);
 	var ctx = canvas.getContext("2d");
 	
@@ -206,11 +209,12 @@ i=1;
 	var canvas2 = document.createElement("canvas");
 	canvas2.setAttribute("class","fractal2");
 	canvas2.width=1000;
-    canvas2.height=800;
+    	canvas2.height=800;
 	document.body.appendChild(canvas2);
 	var ctx2 = canvas2.getContext("2d");
 	ctx2.fillStyle = "green";
 	ctx2.translate(canvas.width/2+8, canvas.height);
+
 ctx.save();
 ctx2.save();
 racine();
